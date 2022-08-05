@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main-container{
+    width: 700px;
+    /* border: 3px solid red; */
+    display: flex;
+    margin: 6% auto;
+}
+
+.photo-container{
+    background-image: url(image-product-desktop.jpg);
+    width: 25vw;
+    /* border: 3px solid black; */
+    min-height: 35vw;
+    /* min-height: 550px; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px 0 0 12px;
+}
+
+
+.text-container{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25vw;
+    padding: 4.5%;
+    border-radius: 0 12px 12px 0;
+    background: white;
+}
+
+
+.prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    /* border: 3px solid blue; */
+}
+
+
+
+button{
+    background: hsl(158, 36%, 37%);
+    height: 39px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.text-container p{
+    font-size: 14px;
+    line-height: 25px;
+    width: 85%;
+}
+
+
+.prices h4{
+    font-size: 15px;
+    color: grey;
+}
+
+.text-container h3, p {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+.text-container h3{
+    letter-spacing: 6px;
+}
+
+.prices h1{
+    color: hsl(158, 36%, 37%);
+}
+
+.text-container h1, .prices{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 150vh;
+    }
+    .photo-container{
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        font-size: 12px;
+        height: 50vh;
+        background-image: url(image-product-mobile.jpg);
+    }
+    .text-container{
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        height: 65vh;
+    }
+
+    .text-container p{
+        /* border: 3px solid red; */
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 1266px) {
+        .text-container p, h3{
+            font-size: 12px;
+        }
+
+        .text-container h1{
+            font-size: 25px;
+        }
+
+        .main-container{
+            min-width: 70%;
+        }
+
+        .photo-container{
+            min-width: 35%;
+        }
+
+        .text-container{
+            min-width: 35%;
+        }
+}
+
+
+
+
+
+
+
+
+
