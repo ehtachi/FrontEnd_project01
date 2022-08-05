@@ -16,8 +16,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/ehtachi/projects)
+- Live Site URL: (https://ehtachi.github.io/projects/)
 
 ## My process
 
